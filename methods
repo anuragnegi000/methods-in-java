@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class methods_01 {
+    static int logic(int a, int b) {
+        int c;
+        if (a>b){
+            c=a*b;
+            System.out.printf("%d * %d = %d",a,b,a*b);
+        }
+        else{
+            c=a+b;
+            System.out.printf("%d + %d = %d",a,b,a+b);
+        }
+        return c;
+    }
+    //Method invocation using static.
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.println("Enter the number a");
+        int x= sc.nextInt();
+
+        System.out.println("Enter the number b");
+        int y= sc.nextInt();
+
+        int c;
+
+   c=logic(x,y);
+
+
+    }
+}
+//     int logic(int x,int y){int z;
+//        if(x>y){
+//            z=(x+y)*5;
+//        }
+//        else{
+//            z=x+y;
+//        }
+//        return z;
+//    }
+// Method invocation using object creation.
+//    public static void main(String[] args) {
+//
+//        int a=3;
+//        int b=2;
+//        int c;
+//        methods_01 obj=new methods_01();
+//        c=obj.logic(a,b);
+//        System.out.println(c);
+
+
+//    }
+//}
