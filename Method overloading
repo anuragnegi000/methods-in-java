@@ -1,0 +1,20 @@
+public class methods_practise {
+    
+//    A simple program of Method overloading.
+    static int logic(int a,int b){
+        return a*b;
+    }
+    static double logic(double x,double y){
+        return x+y;
+    }
+
+    public static void main(String[] args) {
+        int a;
+        double b;
+        a=logic(10,20);
+        b=logic(20.5,30.0);
+        System.out.println(a);
+        System.out.println(b);
+    }
+
+}
